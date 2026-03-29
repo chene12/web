@@ -3,22 +3,21 @@ import { motion } from "motion/react";
 const educationData = [
   {
     degree: "Master of Science in Electrical and Computer Engineering",
-    school: "University of Technology",
-    date: "2017 — 2019",
+    school: "Cornell University",
+    date: "Jan 2026 — Dec 2026",
     achievements: [
-      "GPA: 3.9/4.0",
-      "Thesis: Low-Power Architectures for Machine Learning Accelerators",
-      "Graduate Teaching Assistant for VLSI Design",
+      "GPA: N/A",
+      "Thesis: 28nm Configurable Memory Enabling Logic in Memory",
     ],
   },
   {
-    degree: "Bachelor of Science in Computer Engineering",
-    school: "State University",
-    date: "2013 — 2017",
+    degree: "Bachelor of Science in Electrical and Computer Engineering",
+    school: "Cornell University",
+    date: "Aug 2022 — May 2026",
     achievements: [
-      "GPA: 3.8/4.0",
+      "GPA: 3.9/4.0",
       "Dean's List all semesters",
-      "President of the IEEE Student Chapter",
+      "Cornell Custom Silicon Systems, Physical Design",
     ],
   },
 ];

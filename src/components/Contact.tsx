@@ -15,18 +15,19 @@ export function Contact() {
         className="flex flex-col gap-6"
       >
         <p className="text-zinc-600 leading-relaxed max-w-2xl">
-          I'm always open to discussing new opportunities, interesting projects, or just chatting about computer architecture and ASIC design. Feel free to reach out!
+          I'm always open to discussing new opportunities, interesting projects, or just chatting about computer 
+          architecture and ASIC design. Feel free to reach out!
         </p>
         <div className="flex items-center gap-6 mt-4">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-zinc-600 hover:text-emerald-600 transition-colors font-medium">
+          <a href="https://www.linkedin.com/in/edwin-chen-85aa03210/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-zinc-600 hover:text-emerald-600 transition-colors font-medium">
             <Linkedin className="w-5 h-5" />
             <span>LinkedIn</span>
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-zinc-600 hover:text-emerald-600 transition-colors font-medium">
+          <a href="https://github.com/chene12" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-zinc-600 hover:text-emerald-600 transition-colors font-medium">
             <Github className="w-5 h-5" />
             <span>GitHub</span>
           </a>
-          <a href="mailto:hello@example.com" className="flex items-center gap-2 text-zinc-600 hover:text-emerald-600 transition-colors font-medium">
+          <a href="mailto:ec769@cornell.edu" className="flex items-center gap-2 text-zinc-600 hover:text-emerald-600 transition-colors font-medium">
             <Mail className="w-5 h-5" />
             <span>Email</span>
           </a>

@@ -20,13 +20,21 @@ export function About() {
 
         <div className="space-y-6 text-zinc-600 leading-relaxed">
           <p>
-            I'm a passionate ASIC Design Engineer with over 5 years of experience in developing complex digital systems. My journey started with a deep fascination for how hardware and software interact at the lowest levels. Today, I specialize in creating scalable architectures and optimizing workflows for next-generation chip designs.
+            I am currently a masters of engineering candidate graduating December 2026 studying Electrical and Computer 
+            Engineering at Cornell University. I have a background ASIC and VLSI Design, Computer and Memory Architecture, 
+            and analog IC design.
           </p>
           <p>
-            My expertise spans across the entire ASIC design flow, from RTL coding and verification to synthesis and physical design. I thrive in environments where I can tackle challenging problems, whether it's optimizing power consumption, improving timing closure, or developing custom tools to streamline the design process.
+            On campus, I part of Cornell Custom Silicon Systems leading physical design efforts for digital design 
+            tapeouts on TSMC 180nm technology node. This year, we am working on a complete SOC tapeout with a superscalar 
+            out of order processor and a systolic array accelerator with on-chip SRAM macro.
           </p>
           <p>
-            When I'm not writing Verilog or running simulations, you can find me exploring the latest advancements in semiconductor technology, contributing to open-source hardware projects, or enjoying a good cup of coffee while reading about computer architecture.
+            
+            For academic projects, I have implemented a multicore system entirely in RTL, as well designed an entire SRAM 
+            array in schematic, layout, and extraction. I have also worked on a mixed signal project, which is 
+            addressable imaging array. I am looking for a team where I can leverage my experience in physical and RTL 
+            design to grow my knowledge and skill set and to learn from people who are experts in this field.
           </p>
         </div>
       </motion.div>
