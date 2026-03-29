@@ -16,7 +16,6 @@ const skillCategories = [
     skills: [
       { name: "Verilog", icon: <Cpu className="w-5 h-5" /> },
       { name: "SystemVerilog", icon: <Layers className="w-5 h-5" /> },
-      { name: "VHDL", icon: <Code2 className="w-5 h-5" /> },
     ],
   },
   {
