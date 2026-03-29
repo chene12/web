@@ -3,31 +3,25 @@ import { ArrowUpRight } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior ASIC Design Engineer",
-    company: "TechCorp Semiconductors",
+    title: "CPU Cores RTL Design Intern",
+    company: "Advanced Micro Devices (AMD)",
     url: "#",
-    date: "2022 — PRESENT",
+    date: "May 2026 — Aug 2026",
     description:
-      "Lead the design and verification of high-performance digital IP cores for next-generation networking SoCs. Developed and optimized complex RTL architectures, achieving a 15% reduction in power consumption and a 10% improvement in timing closure. Mentored junior engineers and established best practices for code quality and verification methodologies.",
+      `Incoming Summer 2026`,
     skills: ["SystemVerilog", "UVM", "Synthesis", "Static Timing Analysis", "Python"],
   },
   {
-    title: "ASIC Design Engineer",
-    company: "Innovate Chips Inc.",
+    title: "Embedded Control Electronics Intern",
+    company: "National Aeronautics and Space Administration (NASA)",
     url: "#",
-    date: "2019 — 2022",
+    date: "Jun 2025 — Aug 2025",
     description:
-      "Contributed to the development of a low-power microcontroller unit (MCU) for IoT applications. Implemented key peripheral modules in Verilog and performed block-level verification using constrained random testing. Collaborated with the physical design team to resolve timing violations and ensure successful tape-out.",
-    skills: ["Verilog", "C/C++", "TCL", "Design Compiler", "PrimeTime"],
-  },
-  {
-    title: "Hardware Engineering Intern",
-    company: "Global Silicon Solutions",
-    url: "#",
-    date: "2018 — 2019",
-    description:
-      "Assisted in the verification of a PCIe Gen4 controller IP. Developed testbenches and automated regression scripts using Python and Bash. Participated in code reviews and gained hands-on experience with industry-standard EDA tools.",
-    skills: ["Verilog", "Python", "Bash", "ModelSim", "Git"],
+      `Led the the design and implementation of a new embedded control system to improve power electronics infrastructure,
+      incorporating a four-switch buck-boost converter to improve system modularity. Improved robot arm control with 
+      Q-learning using ϵ-greedy and softmax policies, validated in constrained obstacle environments. Integrated and tested 
+      new software and hardware control into a ROS system.`,
+    skills: ["Python", "C/C++", "Robotics Operating System (ROS)"],
   },
 ];
 

@@ -4,7 +4,6 @@
  */
 
 import { BackgroundEffects } from "./components/BackgroundEffects";
-import { CustomCursor } from "./components/CustomCursor";
 import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { Education } from "./components/Education";
@@ -17,7 +16,6 @@ import { Resume } from "./components/Resume";
 export default function App() {
   return (
     <div className="relative min-h-screen selection:bg-emerald-200 selection:text-emerald-900">
-      <CustomCursor />
       <BackgroundEffects />
       <Navbar />
 

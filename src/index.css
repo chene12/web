@@ -10,12 +10,6 @@
 @layer base {
   body {
     @apply bg-[#F4F4F0] text-[#1A1A1A] antialiased selection:bg-yellow-200 selection:text-[#1A1A1A];
-    cursor: none; /* Hide default cursor for custom cursor */
-  }
-
-  /* Ensure links and buttons don't show default cursor either if we want full custom */
-  a, button, [role="button"] {
-    cursor: none;
   }
 }
 
