@@ -33,6 +33,9 @@ const skillCategories = [
       { name: "Design Compiler", icon: <Cloud className="w-5 h-5" /> },
       { name: "PrimeTime", icon: <Activity className="w-5 h-5" /> },
       { name: "ModelSim/VCS", icon: <Layers className="w-5 h-5" /> },
+      { name: "HSPICE", icon: <Database className="w-5 h-5" /> },
+      { name: "Innovus", icon: <Wrench className="w-5 h-5" /> },
+      { name: "Mentor Calibre", icon: <Code2 className="w-5 h-5" /> },
     ],
   },
   {
