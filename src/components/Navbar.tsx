@@ -35,7 +35,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 flex h-20 items-center justify-between px-6 md:px-12 bg-zinc-50/90 backdrop-blur-sm">
       <div className="flex items-center gap-2 text-sm font-bold tracking-wide text-zinc-900">
         <span className="text-lg">✱</span>
-        <span>JOHN DOE</span>
+        <span>EDWIN CHEN</span>
       </div>
 
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
