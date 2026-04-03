@@ -3,27 +3,34 @@ import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "RISC-V Core Implementation",
+    title: "6 Transistor SRAM Design",
     description:
-      "A 5-stage pipelined RISC-V processor core written in SystemVerilog. Features branch prediction, forwarding, and hazard detection. Synthesizable and verified on FPGA.",
+      `Designed a full custom 6T SRAM bitcell in gpdk 45nm technology. Implemented SRAM column circuitry (write driver, 
+      precharge, reset latch, sense amplifier, and output latch) with optimized drive strength. Integrated
+      bitcells into a 32 by 32 complete SRAM complete with custom decoder and control logic, and achieved DRC and LVS 
+      clean. Anaalyzed extracted layout to validate SRAM operation under Monte Carlo simulation.`,
     image: "https://picsum.photos/seed/riscv/600/400",
     tags: ["SystemVerilog", "RISC-V", "FPGA", "Vivado"],
     demoUrl: "#",
     sourceUrl: "#",
   },
   {
-    title: "Automated Verification Framework",
+    title: "Full Custom Multiply and Accumulate (MAC) Unit",
     description:
-      "A Python-based framework for automating UVM testbench generation and regression testing. Integrates with Jenkins for CI/CD and generates detailed coverage reports.",
+      `Designed 8-bit carry-save multiplier, 20-bit carry-select adder, and accumulator register in Cadence 
+      Virtuoso (gpdk45 PDK). Completed schematic, layout, and post-layout extraction of the full MAC cell with 
+      hierarchical sub-circuits. Verifying correct MAC accumulation over 10 cycles and measured delay and energy at 
+      schematic and extracted levels.`,
     image: "https://picsum.photos/seed/verification/600/400",
     tags: ["Python", "UVM", "Jenkins", "Bash"],
     demoUrl: "#",
     sourceUrl: "#",
   },
   {
-    title: "Low-Power Memory Controller",
+    title: "Multicore RISC-V Processor",
     description:
-      "An AXI-compliant memory controller optimized for low power consumption. Implemented clock gating and dynamic voltage scaling techniques to achieve a 20% power reduction.",
+      `A 5-stage full-bypass processor with two-way associative cache as a single core architecture. Integrated four cores
+      with a toroidal network on chip interconnect into a multicore system. Implemented in synthesizable System Verilog.`,
     image: "https://picsum.photos/seed/memory/600/400",
     tags: ["Verilog", "AXI", "Low Power", "Design Compiler"],
     demoUrl: "#",
