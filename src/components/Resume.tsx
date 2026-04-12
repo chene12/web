@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { FileText, ArrowRight } from "lucide-react";
+import resumeUrl from "./Resume 25.10.5.pdf";
 
 export function Resume() {
   return (
@@ -11,7 +12,7 @@ export function Resume() {
         transition={{ duration: 0.5 }}
       >
         <a
-          href="/resume.pdf"
+          href={resumeUrl}
           target="_blank"
           rel="noreferrer"
           className="group inline-flex items-center gap-3 rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-emerald-600 hover:gap-4"
