@@ -4,6 +4,8 @@ import vlsiSramImage from "./images/VLSI_SRAM.png";
 import vlsiSramReport from "./reports/VLSI_SRAM.pdf";
 import singleScalarImage from "./images/SingleScalar.png";
 import singleScalarReport from "./reports/SingleScalar.pdf";
+import macImage from "./images/MAC.png";
+import macReport from "./reports/MAC.pdf";
 
 const projects = [
   {
@@ -19,9 +21,9 @@ const projects = [
     title: "Full Custom Multiply and Accumulate (MAC) Unit",
     description:
       `Designed, layout-verified, & simulated 8-bit MAC in 45nm.`,
-    image: "https://picsum.photos/seed/verification/600/400",
+    image: macImage,
     tags: ["Cadence Virtuoso", "Full-Custom Digital Design"],
-    demoUrl: "#",
+    demoUrl: macReport,
     sourceUrl: "#",
   },
   {
