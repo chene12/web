@@ -2,40 +2,35 @@ import { motion } from "motion/react";
 import { Github, ExternalLink } from "lucide-react";
 import vlsiSramImage from "./images/VLSI_SRAM.png";
 import vlsiSramReport from "./reports/VLSI_SRAM.pdf";
+import singleScalarImage from "./images/SingleScalar.png";
+import singleScalarReport from "./reports/SingleScalar.pdf";
 
 const projects = [
   {
-    title: "6 Transistor SRAM Design",
+    title: "6 Transistor SRAM Array",
     description:
-      `Designed a full custom 6T SRAM bitcell in gpdk 45nm technology. Implemented SRAM column circuitry (write driver, 
-      precharge, reset latch, sense amplifier, and output latch) with optimized drive strength. Integrated
-      bitcells into a 32 by 32 complete SRAM complete with custom decoder and control logic, and achieved DRC and LVS 
-      clean. Anaalyzed extracted layout to validate SRAM operation under Monte Carlo simulation.`,
+      `Designed 45nm 32x32 SRAM: full custom, LVS/DRC clean, verified.`,
     image: vlsiSramImage,
-    tags: ["SystemVerilog", "RISC-V", "FPGA", "Vivado"],
+    tags: ["Cadence Virtuoso", "Mixed-Signal Design"],
     demoUrl: vlsiSramReport,
     sourceUrl: "#",
   },
   {
     title: "Full Custom Multiply and Accumulate (MAC) Unit",
     description:
-      `Designed 8-bit carry-save multiplier, 20-bit carry-select adder, and accumulator register in Cadence 
-      Virtuoso (gpdk45 PDK). Completed schematic, layout, and post-layout extraction of the full MAC cell with 
-      hierarchical sub-circuits. Verifying correct MAC accumulation over 10 cycles and measured delay and energy at 
-      schematic and extracted levels.`,
+      `Designed, layout-verified, & simulated 8-bit MAC in 45nm.`,
     image: "https://picsum.photos/seed/verification/600/400",
-    tags: ["Python", "UVM", "Jenkins", "Bash"],
+    tags: ["Cadence Virtuoso", "Full-Custom Digital Design"],
     demoUrl: "#",
     sourceUrl: "#",
   },
   {
-    title: "Multicore RISC-V Processor",
+    title: "4-Core Multicore RISC-V Processor",
     description:
-      `A 5-stage full-bypass processor with two-way associative cache as a single core architecture. Integrated four cores
-      with a toroidal network on chip interconnect into a multicore system. Implemented in synthesizable System Verilog.`,
-    image: "https://picsum.photos/seed/memory/600/400",
-    tags: ["Verilog", "AXI", "Low Power", "Design Compiler"],
-    demoUrl: "#",
+      `Designed 4-core multicore (5-stage, 2-way cache, toroidal NoC) in Verilog.`,
+    image: singleScalarImage,
+    tags: ["Verilog", "RTL Design", "Design Verification"],
+    demoUrl: singleScalarReport,
     sourceUrl: "#",
   },
 ];
