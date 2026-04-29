@@ -8,6 +8,8 @@ import macImage from "./images/MAC.png";
 import macReport from "./reports/MAC.pdf";
 import otaImage from "./images/OTA.png";
 import otaReport from "./reports/OTA.pdf";
+import socImage from "./images/SOC.png";
+import superScalarImage from "./images/SuperScalar.png";
 
 type Project = {
   title: string;
@@ -20,15 +22,15 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Out of Order Processor SoC Tapeout TSMC 180nm",
+    title: "Out of Order Processor SoC Tapeout on TSMC 180nm",
     description: "Led physical design, floorplanning, and integration for a custom SoC.",
-    image: "https://picsum.photos/seed/systolic-array/600/400",
+    image: socImage,
     tags: ["Physical Design", "TSMC 180nm", "Memory Compiler"],
   },
   {
     title: "Superscalar Processor Tapein on TSMC 180nm",
     description: "Designed dual-issue, in-order superscalar processor in SystemVerilog.",
-    image: "https://picsum.photos/seed/sram/600/400",
+    image: superScalarImage,
     tags: ["SystemVerilog", "RTL Design", "Design Verification", "TSMC 180nm"],
   },
   {
@@ -39,18 +41,18 @@ const projects: Project[] = [
     demoUrl: otaReport,
   },
   {
-    title: "6 Transistor SRAM Array",
+    title: "6 Transistor SRAM Array on 45nm",
     description:
-      `Designed 45nm 32x32 SRAM: full custom, LVS/DRC clean, verified.`,
+      `Designed 32x32 SRAM: full custom, LVS/DRC clean, verified on 45nm.`,
     image: vlsiSramImage,
     tags: ["Cadence Virtuoso", "Mixed-Signal Design"],
     demoUrl: vlsiSramReport,
     sourceUrl: "#",
   },
   {
-    title: "Full Custom Multiply and Accumulate (MAC) Unit",
+    title: "Full Custom Multiply and Accumulate (MAC) Unit on 45nm",
     description:
-      `Designed, layout-verified, & simulated 8-bit MAC in 45nm.`,
+      `Designed, layout-verified, & simulated 8-bit MAC on 45nm.`,
     image: macImage,
     tags: ["Cadence Virtuoso", "Full-Custom Digital Design"],
     demoUrl: macReport,
