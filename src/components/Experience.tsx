@@ -1,11 +1,9 @@
 import { motion } from "motion/react";
-import { ArrowUpRight } from "lucide-react";
 
 const experiences = [
   {
     title: "CPU Cores RTL Design Intern",
     company: "Advanced Micro Devices (AMD)",
-    url: "#",
     date: "May 2026 — Aug 2026",
     description:
       `Incoming Summer 2026`,
@@ -14,7 +12,6 @@ const experiences = [
   {
     title: "Embedded Control Electronics Intern",
     company: "National Aeronautics and Space Administration (NASA)",
-    url: "#",
     date: "Jun 2025 — Aug 2025",
     description:
       `Led the the design and implementation of a new embedded control system to improve power electronics infrastructure,
@@ -57,21 +54,14 @@ export function Experience() {
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium leading-snug text-zinc-900">
                   <div>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-zinc-900 hover:text-emerald-600 focus-visible:text-emerald-600 group/link text-base"
-                      href={exp.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                    <div className="inline-flex items-baseline font-medium leading-tight text-zinc-900 text-base">
                       <span>
                         {exp.title} ·{" "}
                         <span className="inline-block">
                           {exp.company}
-                          <ArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 ml-1" />
                         </span>
                       </span>
-                    </a>
+                    </div>
                   </div>
                 </h3>
                 <p className="mt-2 text-sm leading-normal text-zinc-600">
