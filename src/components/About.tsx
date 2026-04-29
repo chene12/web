@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import profileImage from "./profile.jpg";
 
 export function About() {
   return (
@@ -36,6 +37,13 @@ export function About() {
             addressable imaging array. I am looking for a team where I can leverage my experience in physical and RTL 
             design to grow my knowledge and skill set and to learn from people who are experts in this field.
           </p>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <img
+            src={profileImage}
+            alt="Profile"
+            className="h-32 w-32 rounded-full object-cover shadow-md ring-1 ring-zinc-200"
+          />
         </div>
       </motion.div>
     </section>
