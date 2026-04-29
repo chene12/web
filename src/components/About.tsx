@@ -26,8 +26,8 @@ export function About() {
             and analog IC design.
           </p>
           <p>
-            On campus, I part of Cornell Custom Silicon Systems leading physical design efforts for digital design 
-            tapeouts on TSMC 180nm technology node. This year, we am working on a complete SOC tapeout with a superscalar 
+            On campus, I am part of Cornell Custom Silicon Systems leading physical design efforts for digital design 
+            tapeouts on TSMC 180nm technology node. This year, we are working on a complete SOC tapeout with a superscalar 
             out of order processor and a systolic array accelerator with on-chip SRAM macro.
           </p>
           <p>
