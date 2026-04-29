@@ -6,8 +6,38 @@ import singleScalarImage from "./images/SingleScalar.png";
 import singleScalarReport from "./reports/SingleScalar.pdf";
 import macImage from "./images/MAC.png";
 import macReport from "./reports/MAC.pdf";
+import otaImage from "./images/OTA.png";
+import otaReport from "./reports/OTA.pdf";
 
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  demoUrl?: string;
+  sourceUrl?: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "Out of Order Processor SoC Tapeout TSMC 180nm",
+    description: "Led physical design, floorplanning, and integration for a custom SoC.",
+    image: "https://picsum.photos/seed/systolic-array/600/400",
+    tags: ["Physical Design", "TSMC 180nm", "Memory Compiler"],
+  },
+  {
+    title: "Superscalar Processor Tapein on TSMC 180nm",
+    description: "Designed dual-issue, in-order superscalar processor in SystemVerilog.",
+    image: "https://picsum.photos/seed/sram/600/400",
+    tags: ["SystemVerilog", "RTL Design", "Design Verification", "TSMC 180nm"],
+  },
+  {
+    title: "Two Stage Op Amp with Frequency Compensation on 45nm",
+    description: "Designed 2-stage OTA with Miller compensation & common-centroid layout on 45nm",
+    image: otaImage,
+    tags: ["Analog Design", "Cadence Virtuoso"],
+    demoUrl: otaReport,
+  },
   {
     title: "6 Transistor SRAM Array",
     description:
@@ -29,9 +59,9 @@ const projects = [
   {
     title: "4-Core Multicore RISC-V Processor",
     description:
-      `Designed 4-core multicore (5-stage, 2-way cache, toroidal NoC) in Verilog.`,
+      `Designed 4-core multicore (5-stage, 2-way cache, toroidal NoC) in SystemVerilog.`,
     image: singleScalarImage,
-    tags: ["Verilog", "RTL Design", "Design Verification"],
+    tags: ["SystemVerilog", "RTL Design", "Design Verification"],
     demoUrl: singleScalarReport,
     sourceUrl: "#",
   },
@@ -51,6 +81,7 @@ export function Projects() {
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
         {projects.map((project, index) => (
+          
           <motion.div
             key={index}
             initial={{ opacity: 0, scale: 0.95 }}
@@ -70,10 +101,14 @@ export function Projects() {
             <div className="flex flex-1 flex-col justify-between p-6">
               <div>
                 <h3 className="font-semibold text-zinc-900 group-hover:text-emerald-600 transition-colors">
-                  <a href={project.demoUrl} target="_blank" rel="noreferrer">
-                    <span className="absolute inset-0 z-10" />
-                    {project.title}
-                  </a>
+                  {project.demoUrl ? (
+                    <a href={project.demoUrl} target="_blank" rel="noreferrer">
+                      <span className="absolute inset-0 z-10" />
+                      {project.title}
+                    </a>
+                  ) : (
+                    <span>{project.title}</span>
+                  )}
                 </h3>
                 <p className="mt-2 text-sm text-zinc-600 line-clamp-3">
                   {project.description}
@@ -91,24 +126,28 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex items-center gap-4 z-20 relative">
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-emerald-600 transition-colors"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.sourceUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-emerald-600 transition-colors"
-                  >
-                    <Github className="h-4 w-4" />
-                    Source
-                  </a>
+                  {project.demoUrl ? (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-emerald-600 transition-colors"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      Live Demo
+                    </a>
+                  ) : null}
+                  {project.sourceUrl ? (
+                    <a
+                      href={project.sourceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-emerald-600 transition-colors"
+                    >
+                      <Github className="h-4 w-4" />
+                      Source
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </div>
