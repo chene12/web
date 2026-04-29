@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -9,9 +9,9 @@ const projects = [
       precharge, reset latch, sense amplifier, and output latch) with optimized drive strength. Integrated
       bitcells into a 32 by 32 complete SRAM complete with custom decoder and control logic, and achieved DRC and LVS 
       clean. Anaalyzed extracted layout to validate SRAM operation under Monte Carlo simulation.`,
-    image: "https://picsum.photos/seed/riscv/600/400",
+    image: "/src/components/images/VLSI_SRAM.png",
     tags: ["SystemVerilog", "RISC-V", "FPGA", "Vivado"],
-    demoUrl: "#",
+    demoUrl: "/src/components/reports/VLSI_SRAM.pdf",
     sourceUrl: "#",
   },
   {
