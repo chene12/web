@@ -34,7 +34,7 @@ export function Experience() {
         </h2>
       </div>
 
-      <div className="group/list">
+      <div>
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -44,9 +44,8 @@ export function Experience() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="mb-12"
           >
-            <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-2xl transition-all duration-300 motion-reduce:transition-none lg:block lg:group-hover:bg-white lg:group-hover:shadow-md lg:group-hover:ring-1 lg:group-hover:ring-zinc-200"></div>
-              
+            <div className="relative grid pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4">
+
               <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 sm:col-span-2">
                 {exp.date}
               </header>
